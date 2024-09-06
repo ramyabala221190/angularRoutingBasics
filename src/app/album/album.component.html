@@ -1,0 +1,3 @@
+<div *ngFor="let album of albums$|async"><a href="#" [routerLink]="[album.id]">{{album.title}}</a></div>
+
+<router-outlet></router-outlet>

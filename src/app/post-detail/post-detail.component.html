@@ -1,0 +1,7 @@
+<div *ngIf="postDetail$|async as detail">
+{{detail|json}}
+<button [routerLink]="[{ outlets: { comout: 'com' } }]">Load comments</button>
+<button [routerLink]="[{ outlets: { comout:null } }]">Close Comments</button>
+
+<router-outlet name="comout"></router-outlet>
+</div>

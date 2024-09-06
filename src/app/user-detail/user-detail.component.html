@@ -1,0 +1,13 @@
+<a href="#" [routerLink]="['todos']" [queryParams]="{'completed': completed === 'yes'? true: false}">Get the todos</a>
+
+Completed<input type="radio" name="status" value="yes" [(ngModel)]="completed">
+Not Completed<input type="radio" name="status" value="no" [(ngModel)]="completed">
+
+
+<a [routerLink]="['posts']" href="#">Get Posts</a>
+<a [routerLink]="['albums']" href="#">Get Albums</a>
+
+
+
+<router-outlet></router-outlet>
+

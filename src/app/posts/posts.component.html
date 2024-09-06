@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let post of posts$|async"><a href="#" [routerLink]="[post.id]">{{post.title}}</a></li>
+</ul>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,5 @@
+<div style="display: flex;flex-wrap: wrap;">
+    <ng-container *ngFor="let photo of photos$|async">
+        <img style="width:10%;height:10%" [src]="photo.url">
+    </ng-container>
+</div>
